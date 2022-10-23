@@ -8,25 +8,32 @@
 <!DOCTYPE html>
 <html>
 	
-	<?php include('templates/header.php'); ?>
+<?php include('templates/header.php'); ?>
+<head>
+	<style>
+		@font-face {
+			font-family: 'PokemonHollow';
+			src: url(./fonts/PokemonHollow.ttf);
+		}
+		body {
+			background-image: url(./WebImg/pokebgimg.png);
+			background-size: cover;
+		}
+		h1 {
+			font-family: 'PokemonHollow', sans-sarif;
+			font-weight:bold;
+			-webkit-text-stroke: 1px #000000;
+		}
 
-	<h4 class="center black-text">Users!</h4>
 
-	<div class="container">
-		<div class="row">
-			<a href="users.php">Users</a>
-			<br>
-			<a href="pokemon.php">Pokédex</a>
-		
-		</div>
-	</div>
-
+	</style>
+</head>
+	
 	<div class="container center">
-		<button name="PokemonMenu" type="button" value="bar" onclick="header"  > <img src="WebImg\pokemonbuttonlogo.png" width="1400" height="500"> </button>
-		<h10> Welcome to the ultimate pokedex website! Click "Pokedex" to begin your adventure!</h10>
+
+								<h1>Welcome to Pokedex</h1>
+
 	</div>
-
-
-	<?php include('templates/footer.php'); ?>
-
+	</body>
 </html>	
+
