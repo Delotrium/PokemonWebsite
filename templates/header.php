@@ -2,26 +2,43 @@
 	<title>Pokédex</title>
 	<!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
   <style type="text/css">
-	  .brand{
-	  	background: #FFDE00 !important;
-	  }
+	@font-face {
+			font-family: 'MiraikatoHandPERSONALUSE';
+			src: url(./fonts/MiraikatoHandPERSONALUSE-Bold.otf);
+	}	
+	b{
+			font-family: 'MiraikatoHandPERSONALUSE', sans-sarif;
+			font-weight:bold;
+			-webkit-text-stroke: 0.5px #000000;
+
+	}
+	.brand{
+	  	background: #ff2439 !important;
+	}
   	.brand-text{
-  		color: #CC0000 !important;
+  		color: #ff2439 !important;
+		font-family: "Sigmar One", sans-serif;
   	}
   	form{
-  		max-width: 460px;
-  		margin: 20px auto;
+  		max-width: 1208px;
+  		margin: 0px auto;
   		padding: 20px;
   	}
+
+	
   </style>
 </head>
-<body style="background-color:#e5e10b;">
-	<nav class="white z-depth-0">
+<body style="background-color:#f5f5f5;">
+	<nav class="yellow z-depth-5">
     <div class="container">
-      <a href="index.php" class="brand-logo brand-text">Pokédex</a>
-      <ul id="nav-mobile" class="right hide-on-small-and-down">
-        <li><a href="add.php" class="btn brand z-depth-0">Create an Account</a></li>
+      <ul id="nav-mobile" class="right">
+	  <a href="pokemon.php" class="btn brand z-depth-5">Pokedex</a>
+	  <a href="duel.php" class="btn brand z-depth-5">Duel</a>
+        <a href="add.php" class="btn brand z-depth-5">My Account</a>
+		<a href="index.php" class="btn brand z-depth-5">Home</a>
       </ul>
     </div>
   </nav>
+</body>
